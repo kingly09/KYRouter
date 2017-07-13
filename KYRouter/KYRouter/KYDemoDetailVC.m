@@ -88,6 +88,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:239.f/255 green:239.f/255 blue:244.f/255 alpha:1];
     [self.view addSubview:self.resultTextView];
     // Do any additional setup after loading the view.
+    self.title = @"demoDetail";
 }
 
 - (void)appendLog:(NSString *)log
