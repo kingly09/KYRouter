@@ -234,10 +234,10 @@
 #define TEMPLATE_URL @"ky://search/:keyword"
     
 [KYRouter registerURLPattern:TEMPLATE_URL  toHandler:^(NSDictionary *routerParameters) {
-    NSLog(@"routerParameters[keyword]:%@", routerParameters[@"keyword"]); // Hangzhou
+    NSLog(@"routerParameters[keyword]:%@", routerParameters[@"keyword"]); // IOS DEV
 }];
 
-[KYRouter openURL:[KYRouter generateURLWithPattern:TEMPLATE_URL parameters:@[@"Hangzhou"]]];
+[KYRouter openURL:[KYRouter generateURLWithPattern:TEMPLATE_URL parameters:@[@"IOS DEV"]]];
 }
 
 - (void)demoDeregisterURLPattern
