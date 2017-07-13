@@ -33,6 +33,8 @@
 
 @implementation ViewController
 
+
+
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
@@ -44,5 +46,10 @@
   // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)onClickOpenURL:(id)sender {
+  
+   
+   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:_textfield.text]];
+}
 
 @end
