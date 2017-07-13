@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  KYUserListVC.h
 //  KYRouter
 //
 //  Created by kingly on 2017/7/13.
@@ -21,18 +21,11 @@
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE. All rights reserved.
+// THE SOFTWARE. . All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-typedef UIViewController *(^ViewControllerHandler)();
-
-
-@interface ViewController : UIViewController
-
-+ (void)registerWithTitle:(NSString *)title handler:(ViewControllerHandler)handler;
-
+@interface KYUserListVC : UIViewController
 
 @end
-
