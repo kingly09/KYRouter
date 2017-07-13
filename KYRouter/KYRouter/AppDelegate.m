@@ -65,5 +65,35 @@
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark -  NOTE: 9.0以后使用新API接口
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options
+{
+    //可以用此方法判断url.description，url.host的具体内容，然后抽取判断
+    
+    NSLog(@"url.description::%@",url.description);
+    NSLog(@"url.host::%@",url.host);
+    
+    NSLog(@"url options ::%@",options);
+  
+    return YES;      
+
+}
+#pragma mark -  NOTE: 9.0 之前使用新API接口
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    //可以用此方法判断url.description，url.host的具体内容，然后抽取判断
+   
+   return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    
+  return YES; 
+    
+}
+
 
 @end

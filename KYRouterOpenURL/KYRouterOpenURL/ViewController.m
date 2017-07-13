@@ -48,8 +48,23 @@
 
 - (IBAction)onClickOpenURL:(id)sender {
   
-   
-   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:_textfield.text]];
+  NSString *customURL = _textfield.text; 
+  
+  if ([[UIApplication sharedApplication] 
+       canOpenURL:[NSURL URLWithString:customURL]]) 
+  { 
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:customURL]]; 
+  } 
+  else 
+  { 
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"URL error" 
+                                                    message:[NSString stringWithFormat: 
+                                                             @"No custom URL defined for %@", customURL] 
+                                                   delegate:self cancelButtonTitle:@"Ok" 
+                                          otherButtonTitles:nil]; 
+    [alert show]; 
+  } 
+  
 }
 
 @end
