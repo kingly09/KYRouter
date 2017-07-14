@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC9C07881F18646200378320 /* KYRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C07871F18646200378320 /* KYRouter.m */; };
 		BC9C5EDF1F175C6F00F28C25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C5EDE1F175C6F00F28C25 /* main.m */; };
 		BC9C5EE21F175C6F00F28C25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C5EE11F175C6F00F28C25 /* AppDelegate.m */; };
 		BC9C5EE51F175C6F00F28C25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C5EE41F175C6F00F28C25 /* ViewController.m */; };
 		BC9C5EE81F175C6F00F28C25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9C5EE61F175C6F00F28C25 /* Main.storyboard */; };
 		BC9C5EEA1F175C6F00F28C25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9C5EE91F175C6F00F28C25 /* Assets.xcassets */; };
 		BC9C5EED1F175C6F00F28C25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9C5EEB1F175C6F00F28C25 /* LaunchScreen.storyboard */; };
-		BC9C5EF71F175E9500F28C25 /* KYRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C5EF61F175E9500F28C25 /* KYRouter.m */; };
 		BC9C5F001F1762FA00F28C25 /* KYProductDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C5EFF1F1762FA00F28C25 /* KYProductDetailVC.m */; };
 		BC9C5F031F17634200F28C25 /* KYUserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C5F021F17634200F28C25 /* KYUserInfoVC.m */; };
 		BC9C5F061F17639E00F28C25 /* KYUserListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9C5F051F17639E00F28C25 /* KYUserListVC.m */; };
@@ -21,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC9C07861F18646200378320 /* KYRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYRouter.h; sourceTree = "<group>"; };
+		BC9C07871F18646200378320 /* KYRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYRouter.m; sourceTree = "<group>"; };
 		BC9C5EDA1F175C6F00F28C25 /* KYRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KYRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9C5EDE1F175C6F00F28C25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BC9C5EE01F175C6F00F28C25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,8 +33,6 @@
 		BC9C5EE91F175C6F00F28C25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC9C5EEC1F175C6F00F28C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC9C5EEE1F175C6F00F28C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC9C5EF51F175E9500F28C25 /* KYRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYRouter.h; sourceTree = "<group>"; };
-		BC9C5EF61F175E9500F28C25 /* KYRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYRouter.m; sourceTree = "<group>"; };
 		BC9C5EFE1F1762FA00F28C25 /* KYProductDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KYProductDetailVC.h; sourceTree = "<group>"; };
 		BC9C5EFF1F1762FA00F28C25 /* KYProductDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KYProductDetailVC.m; sourceTree = "<group>"; };
 		BC9C5F011F17634200F28C25 /* KYUserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KYUserInfoVC.h; path = ../KYUserInfoVC.h; sourceTree = "<group>"; };
@@ -54,10 +54,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC9C07851F18646200378320 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				BC9C07861F18646200378320 /* KYRouter.h */,
+				BC9C07871F18646200378320 /* KYRouter.m */,
+			);
+			name = Libs;
+			path = ../Libs;
+			sourceTree = "<group>";
+		};
 		BC9C5ED11F175C6F00F28C25 = {
 			isa = PBXGroup;
 			children = (
-				BC9C5EF41F175E7F00F28C25 /* Libs */,
+				BC9C07851F18646200378320 /* Libs */,
 				BC9C5EDC1F175C6F00F28C25 /* KYRouter */,
 				BC9C5EDB1F175C6F00F28C25 /* Products */,
 			);
@@ -101,16 +111,6 @@
 				BC9C5EDE1F175C6F00F28C25 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BC9C5EF41F175E7F00F28C25 /* Libs */ = {
-			isa = PBXGroup;
-			children = (
-				BC9C5EF51F175E9500F28C25 /* KYRouter.h */,
-				BC9C5EF61F175E9500F28C25 /* KYRouter.m */,
-			);
-			name = Libs;
-			path = KYRouter/Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,11 +188,11 @@
 			files = (
 				BC9C5F091F17642600F28C25 /* KYDemoDetailVC.m in Sources */,
 				BC9C5F061F17639E00F28C25 /* KYUserListVC.m in Sources */,
+				BC9C07881F18646200378320 /* KYRouter.m in Sources */,
 				BC9C5EE51F175C6F00F28C25 /* ViewController.m in Sources */,
 				BC9C5F031F17634200F28C25 /* KYUserInfoVC.m in Sources */,
 				BC9C5F001F1762FA00F28C25 /* KYProductDetailVC.m in Sources */,
 				BC9C5EE21F175C6F00F28C25 /* AppDelegate.m in Sources */,
-				BC9C5EF71F175E9500F28C25 /* KYRouter.m in Sources */,
 				BC9C5EDF1F175C6F00F28C25 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +356,7 @@
 				BC9C5EF31F175C6F00F28C25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
