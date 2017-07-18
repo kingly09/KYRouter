@@ -161,7 +161,7 @@ extern NSString *const KYRouterParameterUserInfo;
 ```
 
 
-### <a name="KYRouter_05"></a> 可以统一管理URL
+### <a name="KYRouter_06"></a> 可以统一管理URL
 
 
 URL 的处理一不小心，就容易散落在项目的各个角落，不容易管理。比如注册时的 pattern 是 `ky://beauty/:id`，然后 open 时就是 `ky://beauty/123`，这样到时候 url 有改动，处理起来就会很麻烦，不好统一管理。
