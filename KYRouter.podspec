@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 s.name         = "KYRouter"
-s.summary      = "KYBarrageKit this is a high availability, easy to use barrage Framework Library."
-s.version      = '1.0.0'
+s.summary      = "一个高效,灵活,易用 的 iOS URL Router."
+s.version      = '1.0.1'
 s.homepage     = "https://github.com/kingly09/KYRouter"
 s.license      = { :type => "MIT", :file => "LICENSE" }
 s.author       = { "kingly" => "libintm@163.com" }
