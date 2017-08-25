@@ -26,6 +26,7 @@
 
 #import "ViewController.h"
 #import "KYDemoDetailVC.h"
+#import "KYRouter.h"
 
 static NSMutableDictionary *titleWithHandlers;
 static NSMutableArray *titles;
@@ -53,6 +54,18 @@ static NSMutableArray *titles;
   // Do any additional setup after loading the view, typically from a nib.
   self.title = @"KYRouterDemo";
   [self setupTableView];
+  
+//  [KYRouter registerURLPattern:@"ky://productDetail" toHandler:^(NSDictionary *routerParameters) {
+//      
+//      NSLog(@"第一次 ");
+//     
+//  }];
+//  [KYRouter registerURLPattern:@"ky://productDetail" toHandler:^(NSDictionary *routerParameters) {
+//       NSLog(@"第er次 ");
+//
+//  }];
+
+  
   
 }
 
@@ -87,7 +100,8 @@ static NSMutableArray *titles;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-  
+    
+//    [KYRouter openURL:@"ky://productDetail/?param1=111&param2=222"];
   
     UIViewController *viewController = ((ViewControllerHandler)titleWithHandlers[titles[indexPath.row]])();
     [self.navigationController pushViewController:viewController animated:YES];

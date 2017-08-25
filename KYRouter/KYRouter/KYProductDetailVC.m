@@ -130,12 +130,12 @@
 -(void)demoProductDetailUsage{
   
   
-  [KYRouter registerURLPattern:@"ky://productDetail" toHandler:^(NSDictionary *routerParameters) {
+  [KYRouter registerURLPattern:@"https://test-shop.gogal.cn" toHandler:^(NSDictionary *routerParameters) {
     [self appendLog:@"匹配到了 url，以下是相关信息"];
     [self appendLog:[NSString stringWithFormat:@"routerParameters:%@", routerParameters]];
   }];
   
-  [KYRouter openURL:@"ky://productDetail/?param1=111&param2=222"];
+ [KYRouter openURL:@"https://test-shop.gogal.cn/gogal-shop/appBottomConfig/getAppBottomByPlatform/v1?color=red&aa=1&qqq=1"];
   
 }
 
@@ -149,7 +149,7 @@
     [self appendLog:[NSString stringWithFormat:@"routerParameters[keyword]:%@", routerParameters[@"keyword"]]];
   }];
   
-  [KYRouter openURL:@"ky://search/12121/?param1=111&param2=222"];
+  [KYRouter openURL:@"ky://search/"];
   
 }
 

@@ -214,7 +214,7 @@
 - (void)demoCompletion
 {
 [KYRouter registerURLPattern:@"ky://detail" toHandler:^(NSDictionary *routerParameters) {
-    NSLog(@"匹配到了 url, 一会会执行 Completion Block");
+    NSLog(@"匹配到了 url, 一会会执行 Completion Block ::%@",routerParameters);
     
     // 模拟 push 一个 VC
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -225,8 +225,8 @@
     });
 }];
 
-[KYRouter openURL:@"ky://detail" withUserInfo:nil completion:^(id result){
-    [self appendLog:@"Open 结束，我是 Completion Block"];
+[KYRouter openURL:@"ky://detail/1241/1212/?aa=12&bb=12" withUserInfo:nil completion:^(id result){
+    [self appendLog:[NSString stringWithFormat:@"Open 结束，我是 Completion Block ：：%@", result]];
 }];
 }
 
